@@ -43,8 +43,8 @@ nav ul li{
   margin: 5px;
 }
 header div{
-  display: flex;
-  align-items: center;
+ display: flex;
+ align-items: center;
   
  }
 header div h1 {
@@ -63,7 +63,7 @@ header div h1 {
   background: none;
   border: none;
   cursor: pointer;  
-  width: 100%;
+  width: 100%;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,6 +354,9 @@ footer ul {
   .section-productos .product-menu {
     grid-template-columns: repeat(2, 1fr);
   }
+  .btn-logo {
+    max-width: 160px;
+  }
 }
 /* Laptops y monitores medianos */
 @media (min-width: 992px) {
@@ -366,6 +369,9 @@ footer ul {
     align-items: start;
     gap: 2rem;
     flex-direction: unset;
+  }
+  .btn-logo {
+    max-width: 100%;
   }
 }
 /* Pantallas grandes: tantas columnas como entren; si caben todos, una sola fila */

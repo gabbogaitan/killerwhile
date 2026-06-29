@@ -7,99 +7,105 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Home KillerWhile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rock+Salt&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rock+Salt&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-pagina="home">
     <header>
         <div><a href="../index.html"><img src="../img/logo1.png" alt="logo principal" width="100" height="100"></a>
         <h1 id="titulo">KILLER WHILE URBAN</h1></div>
     </header>
     <nav>
-         <ul>
-         <li><a href="home.html">HOME</a></li>
-         <li><a href="tiendakiller.html">TIENDA</a></li>
-         <li><a href="contacto.html">CONTACTO</a></li>  
-         </ul>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li class="nav-dropdown">
+                <button type="button" class="nav-dropdown-toggle">TIENDA ▾</button>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="tiendakiller.html">Todo</a></li>
+                    <li><a href="remeras.html">Remeras</a></li>
+                    <li><a href="buzos.html">Buzos</a></li>
+                    <li><a href="camperas.html">Camperas</a></li>
+                    <li><a href="medias.html">Medias</a></li>
+                    <li><a href="pantalones.html">Pantalones</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><button type="button" class="carrito-toggle" id="carritoToggle">CARRITO (<span id="carritoContador">0</span>)</button></li>
+        </ul>
     </nav>
 
     <main>
-        <H1>Categorias</H1>
+        <h1>Categorias</h1>
         <section class="section-productos">
-        <div class="product-menu">
-            <!-- ==================== PRODUCTOS ==================== -->
-            <div class="product-card">
-                <img src="../img/remeras.png" alt="remeras">
-                <div class="producto-descripcion">
-                    <span>Remeras</span>
-                    <h3>Remeras de stock limitado</h3>
+            <div class="product-menu">
+                <div class="product-card">
+                    <img src="../img/remeras/remeras.png" alt="remeras">
+                    <div class="producto-descripcion">
+                        <span>Remeras</span>
+                        <h3>Remeras de stock limitado</h3>
+                    </div>
+                    <a href="remeras.html" class="carrito">Ver Productos</a>
                 </div>
-                <a href="remeras.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Ver Productos</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/buzos.png" alt="buzos">
-                <div class="producto-descripcion">
-                    <span>Buzos</span>
-                    <h3>BUZOS oversize</h3>
+                <div class="product-card">
+                    <img src="../img/buzos/buzos.png" alt="buzos">
+                    <div class="producto-descripcion">
+                        <span>Buzos</span>
+                        <h3>BUZOS oversize</h3>
+                    </div>
+                    <a href="buzos.html" class="carrito">Ver Productos</a>
                 </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Ver Productos</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/pantalones.jpg" alt="pantalones">
-                <div class="producto-descripcion">
-                    <span>Pantalones</span>
-                    <h3>Pantalones</h3>
+                <div class="product-card">
+                    <img src="../img/pantalones/pantalones.jpg" alt="pantalones">
+                    <div class="producto-descripcion">
+                        <span>Pantalones</span>
+                        <h3>Pantalones</h3>
+                    </div>
+                    <a href="pantalones.html" class="carrito">Ver Productos</a>
                 </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Ver Productos</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/medias.jpg" alt="medias">
-                <div class="producto-descripcion">
-                    <span>MEDIAS</span>
-                    <h3>Soquetes, media caña</h3>
+                <div class="product-card">
+                    <img src="../img/medias/medias.jpg" alt="medias">
+                    <div class="producto-descripcion">
+                        <span>MEDIAS</span>
+                        <h3>Soquetes, media caña</h3>
+                    </div>
+                    <a href="medias.html" class="carrito">Ver Productos</a>
                 </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Ver Productos</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/campera_nezuko.jpg" alt="campera">
-                <div class="producto-descripcion">
-                    <span>CAMPERAS</span>
-                    <h3>MEDIA ESTACION, INVIERNO</h3>
+                <div class="product-card">
+                    <img src="../img/camperas/campera_one_piece.jpg" alt="campera">
+                    <div class="producto-descripcion">
+                        <span>CAMPERAS</span>
+                        <h3>MEDIA ESTACION, INVIERNO</h3>
+                    </div>
+                    <a href="camperas.html" class="carrito">Ver Productos</a>
                 </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Ver Productos</a>
             </div>
-            
-            
-        </div> 
         </section>
-        
-        
-
     </main>
 
-<footer>
-    <div>        
-        <ul>
-            <li>Lunes a Viernes de 8 a 18 hrs. Sáb de 8 a 16hs</li>
-            <li><a href="../index.html"><img src="../img/logo1.png" alt="logo principal" width="70" height="70"></a></li>              
-            <li><a href="https://maps.app.goo.gl/CtSu9yVcjLLP3Bbe6">Lavalle 824,(CABA). Argentina</a></li>
-        </ul>
-    </div>  
-</footer>
+    <aside id="carritoPanel" class="carrito-panel" aria-label="Carrito de compras">
+        <div class="carrito-panel-header">
+            <h2>Carrito</h2>
+            <button type="button" id="carritoCerrar" aria-label="Cerrar carrito">&times;</button>
+        </div>
+        <ul id="carritoLista" class="carrito-lista"></ul>
+        <div class="carrito-panel-footer">
+            <p>Total: <span id="carritoTotal">$0</span></p>
+            <button type="button" id="carritoWhatsApp" class="btn-comprar">COMPRAR POR WHATSAPP</button>
+        </div>
+    </aside>
 
+    <footer>
+        <div>
+            <ul>
+                <li>Lunes a Viernes de 8 a 18 hrs. Sáb de 8 a 16hs</li>
+                <li><a href="../index.html"><img src="../img/logo1.png" alt="logo principal" width="70" height="70"></a></li>
+                <li><a href="https://maps.app.goo.gl/CtSu9yVcjLLP3Bbe6">Lavalle 824,(CABA). Argentina</a></li>
+            </ul>
+        </div>
+    </footer>
 
-
-
-
-
-<script src="../script.js"></script>
+    <script src="../catalogo.js"></script>
+    <script src="../script.js"></script>
 </body>
-
-
 
 </html>

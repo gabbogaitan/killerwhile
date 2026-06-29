@@ -7,134 +7,63 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Tienda KillerWhile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rock+Salt&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rock+Salt&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-pagina="tienda">
     <header>
         <div><a href="../index.html"><img src="../img/logo1.png" alt="logo principal" width="100" height="100"></a>
         <h1>KILLER WHILE URBAN</h1></div>
-    </header>        
+    </header>
     <nav>
         <ul>
             <li><a href="home.html">HOME</a></li>
-            <li><a href="tiendakiller.html">TIENDA</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>  
+            <li class="nav-dropdown">
+                <button type="button" class="nav-dropdown-toggle">TIENDA ▾</button>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="tiendakiller.html">Todo</a></li>
+                    <li><a href="remeras.html">Remeras</a></li>
+                    <li><a href="buzos.html">Buzos</a></li>
+                    <li><a href="camperas.html">Camperas</a></li>
+                    <li><a href="medias.html">Medias</a></li>
+                    <li><a href="pantalones.html">Pantalones</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><button type="button" class="carrito-toggle" id="carritoToggle">CARRITO (<span id="carritoContador">0</span>)</button></li>
         </ul>
-        </nav>
+    </nav>
     <main>
-        <H1>Inventario</H1>
+        <h1>Inventario</h1>
         <section class="section-productos">
-        <div class="product-menu">
-            <!-- ==================== PRODUCTOS ==================== -->
-            <div class="product-card">
-                <img src="../img/remeras.png" alt="remeras">
-                <div class="producto-descripcion">
-                    <span>Remeras</span>
-                    <h3>DEADPOOL</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>COMPRAR</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/pacman.png" alt="buzos">
-                <div class="producto-descripcion">
-                    <span>Remeras</span>
-                    <h3>PACMAN</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>COMPRAR</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/volver_al_futuro.png" alt="pantalones">
-                <div class="producto-descripcion">
-                    <span>Remeras</span>
-                    <h3>Volver al Futuro</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Comprar</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/gengar_evo.jpg" alt="medias">
-                <div class="producto-descripcion">
-                    <span>Remeras</span>
-                    <h3> Gengar Evoluciones - Pokemon</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Comprar</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/Homero_Pastelito.png" alt="medias">
-                <div class="producto-descripcion">
-                    <span>Remeras</span>
-                    <h3>Homero Pastelito - Los Simpsons</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Comprar</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/campera_nezuko.jpg" alt="campera">
-                <div class="producto-descripcion">
-                    <span>Camperas</span>
-                    <h3>Campera Nezuko - Demon Slayer</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Comprar</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/campera_one_piece.jpg" alt="campera">
-                <div class="producto-descripcion">
-                    <span>Camperas</span>
-                    <h3>Campera Lufy - One Piece</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Comprar</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/pantalones.jpg" alt="pantalones">
-                <div class="producto-descripcion">
-                    <span>Pantalones</span>
-                    <h3>Pantalones de Jean</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Comprar</a>
-            </div>
-            <div class="product-card">
-                <img src="../img/medias.jpg" alt="medias">
-                <div class="producto-descripcion">
-                    <span>Medias</span>
-                    <h3>Medias animadas</h3>
-                </div>
-                <a href="tiendakiller.html" class="carrito">
-                    <i class="fal fa-shopping-cart"></i>Comprar</a>
-            </div>
-            
-            
-        </div> 
+            <div class="product-menu" id="productos-tienda"></div>
         </section>
-
-   
-        
-        
-        
-
     </main>
 
-<footer>
-    <div>        
-        <ul>
-            <li>Lunes a Viernes de 8 a 18 hrs. Sáb de 8 a 16hs</li>
-            <li><a href="../index.html"><img src="../img/logo1.png" alt="logo principal" width="70" height="70"></a></li>              
-            <li><a href="https://maps.app.goo.gl/CtSu9yVcjLLP3Bbe6">Lavalle 824,(CABA). Argentina</a></li>
-        </ul>
-    </div>  
-</footer>
+    <aside id="carritoPanel" class="carrito-panel" aria-label="Carrito de compras">
+        <div class="carrito-panel-header">
+            <h2>Carrito</h2>
+            <button type="button" id="carritoCerrar" aria-label="Cerrar carrito">&times;</button>
+        </div>
+        <ul id="carritoLista" class="carrito-lista"></ul>
+        <div class="carrito-panel-footer">
+            <p>Total: <span id="carritoTotal">$0</span></p>
+            <button type="button" id="carritoWhatsApp" class="btn-comprar">COMPRAR POR WHATSAPP</button>
+        </div>
+    </aside>
 
-<script src="../script.js"></script>
+    <footer>
+        <div>
+            <ul>
+                <li>Lunes a Viernes de 8 a 18 hrs. Sáb de 8 a 16hs</li>
+                <li><a href="../index.html"><img src="../img/logo1.png" alt="logo principal" width="70" height="70"></a></li>
+                <li><a href="https://maps.app.goo.gl/CtSu9yVcjLLP3Bbe6">Lavalle 824,(CABA). Argentina</a></li>
+            </ul>
+        </div>
+    </footer>
 
-
+    <script src="../catalogo.js"></script>
+    <script src="../script.js"></script>
 </body>
-
-
 
 </html>

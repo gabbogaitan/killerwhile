@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Contacto</title>
+    <title>Buzos KillerWhile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rock+Salt&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-pagina="categoria">
     <header>
         <div><a href="../index.html"><img src="../img/logo1.png" alt="logo principal" width="100" height="100"></a>
         <h1>KILLER WHILE URBAN</h1></div>
@@ -33,31 +33,12 @@
             <li><button type="button" class="carrito-toggle" id="carritoToggle">CARRITO (<span id="carritoContador">0</span>)</button></li>
         </ul>
     </nav>
-    <main>
-        <div class="container">
-            <div class="form-container" style="margin-left: 1rem;">
-                <form id="contactForm">
-                    <h2>ENVIANOS TU CONSULTA</h2><br>
-                    <label for="nombre">Nombre:</label> <br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required><br>
-                    <label for="email">Correo Electrónico:</label> <br>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required> <br>
-                    <label for="mensaje">Mensaje:</label> <br>
-                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Tu Consulta" required></textarea> <br>
-                    <button type="submit" class="image-button">
-                        <img src="../img/mensaje.gif" alt="Enviar">
-                    </button>
-                </form>
-            </div><br><br>
 
-            <div class="mapa">
-                <h2>NUESTRA UBICACION</h2><br>
-                <h3>Nos encontramos en pleno corazon de la ciudad de buenos aires</h3><br>
-                <div class="iframe-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0606393663534!2d-58.3785031!3d-34.60262809999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacec78702eb%3A0x1fe6086e58fcd0f1!2sLavalle%20824%2C%20C1047AAR%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1778959985258!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div><br><br>
-            </div>
-        </div>
+    <main>
+        <h1>Inventario BUZOS</h1>
+        <section class="section-productos">
+            <div class="product-menu" id="productos-categoria" data-categoria="buzos"></div>
+        </section>
     </main>
 
     <aside id="carritoPanel" class="carrito-panel" aria-label="Carrito de compras">

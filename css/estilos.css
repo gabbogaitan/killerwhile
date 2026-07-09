@@ -83,11 +83,21 @@ nav ul li{
   padding: 10px 16px;
   color: rgb(103, 236, 15);
   text-decoration: none;
+  text-shadow:
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }
 
 .nav-dropdown-menu a:hover {
   background-color: rgb(17, 119, 126);
   color: #f7be03;
+  text-shadow:
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }
 
 .carrito-panel {
@@ -103,6 +113,11 @@ nav ul li{
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 0.3s ease;
+  text-shadow:
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }
 
 .carrito-panel.abierto {
